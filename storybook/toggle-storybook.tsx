@@ -57,7 +57,7 @@ export function ToggleStorybook(props) {
         }
       }
       ws.current.onerror = (e) => {
-        console.tron.error(e, null)
+        // console.tron.error(e, null)
         setShowStorybook(storedSetting === "on")
       }
     })

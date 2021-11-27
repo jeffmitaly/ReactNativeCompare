@@ -2,15 +2,7 @@ import React, { FC } from "react"
 import { ImageStyle, Platform, TextStyle, View, ViewStyle } from "react-native"
 import { StackScreenProps } from "@react-navigation/stack"
 import { observer } from "mobx-react-lite"
-import {
-  BulletItem,
-  Button,
-  Header,
-  Text,
-  Screen,
-  AutoImage as Image,
-  GradientBackground,
-} from "../../components"
+import { BulletItem, Button, Header, Text, Screen, AutoImage as Image } from "../../components"
 import { NavigatorParamList } from "../../navigators"
 import { color, spacing } from "../../theme"
 import { Api } from "../../services/api"
@@ -139,7 +131,6 @@ export const DemoScreen: FC<StackScreenProps<NavigatorParamList, "demo">> = obse
 
     return (
       <View testID="DemoScreen" style={FULL}>
-        <GradientBackground colors={["#422443", "#281b34"]} />
         <Screen style={CONTAINER} preset="scroll" backgroundColor={color.transparent}>
           <Header
             headerTx="demoScreen.howTo"
